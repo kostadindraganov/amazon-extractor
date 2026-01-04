@@ -1,0 +1,7 @@
+{
+  "name": "Amazon Image Harvester",
+  "description": "An advanced AI-powered tool that extracts and organizes product images from Amazon links listed in Google Spreadsheets using Gemini Search Grounding.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
