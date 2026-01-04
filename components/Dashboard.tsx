@@ -1,7 +1,7 @@
 
 import React, { useMemo } from 'react';
-import { AmazonProduct } from '../types';
-import ProductCard from './ProductCard';
+import { AmazonProduct } from '../types.ts';
+import ProductCard from './ProductCard.tsx';
 
 interface DashboardProps {
   products: AmazonProduct[];
@@ -29,13 +29,11 @@ const Dashboard: React.FC<DashboardProps> = ({ products }) => {
             </h3>
             <div className="h-[1px] flex-grow bg-slate-800"></div>
             <span className="text-xs font-semibold text-slate-500 uppercase tracking-widest">
-              {/* Fix: groupProducts length is now correctly typed as AmazonProduct[] */}
               {groupProducts.length} Items
             </span>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Fix: groupProducts map is now correctly typed as AmazonProduct[] */}
             {groupProducts.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}

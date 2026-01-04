@@ -1,9 +1,9 @@
 
 import React, { useState } from 'react';
-import { SheetData, AmazonProduct } from './types';
-import { SheetService } from './services/sheetService';
-import { GeminiService } from './services/geminiService';
-import Dashboard from './components/Dashboard';
+import { SheetData, AmazonProduct } from './types.ts';
+import { SheetService } from './services/sheetService.ts';
+import { GeminiService } from './services/geminiService.ts';
+import Dashboard from './components/Dashboard.tsx';
 
 const DEFAULT_SHEET = "https://docs.google.com/spreadsheets/d/1f1k44wG4D8IEt71UNAD-7_GKGkssgLEi/edit?gid=2110124607#gid=2110124607";
 

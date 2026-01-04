@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        // Define process.env for browser compatibility when deployed to static hosts like Netlify
+        window.process = { env: { API_KEY: "" } };
+    </script>
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -39,5 +43,7 @@
 </head>
 <body>
     <div id="root"></div>
+    <!-- Explicitly load the entry point module -->
+    <script type="module" src="./index.tsx"></script>
 </body>
 </html>
